@@ -10,6 +10,7 @@ const noTexts = [
     "你认真的吗...?",
     "要不再想想?",
     "不许选这个!",
+    "我会伤心的...",
     "我会伤心的..."
 ];
 
@@ -31,7 +32,7 @@ noButton.addEventListener("click", function() {
     questionText.style.transform = `translateY(-${moveUp}px)`;
 
     // No 文案变化（前 5 次变化）
-    if (clickCount <= 4) {
+    if (clickCount <= 5) {
         noButton.innerText = noTexts[clickCount - 1];
     }
 
